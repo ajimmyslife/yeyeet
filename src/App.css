@@ -1,0 +1,70 @@
+*:before,
+*:after,
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('./images/YETEMPLATE.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+input,
+textarea {
+  -webkit-font-smoothing: antialiased;
+  font: inherit;
+  color: #00eb46;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search {
+  margin: auto;
+}
+
+.input {
+  background: none;
+  font-size: 30px;
+  width: 250px;
+  height: auto;
+  border: none;
+  outline: none;
+  text-align: center;
+  padding: 0;
+}
+
+.input::placeholder {
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+  .user-hint,
+  .title {
+    font-size: 18px;
+  }
+  .page {
+    padding: 2rem;
+  }
+  .input {
+    font-size: 36px;
+  }
+}
